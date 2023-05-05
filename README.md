@@ -8,6 +8,11 @@ This repo is the official implementation of the paper:
 
 > [[arXiv]](https://arxiv.org/abs/2304.12031) [[youtube]](https://youtu.be/) [[bilibili]](https://)
 
+
+<p align="center">
+  <img src="assets/compare.gif" width="500" alt="trade-off"/>
+</p>
+
 <p align="center">
   <img src="assets/tradeoff.png" width="500" alt="trade-off"/>
 </p>
@@ -68,9 +73,7 @@ Navigate to [cpp]() directory and run `demo.cpp`, a result and the corresponding
 
 
 # Cite
-This code is for non-commercial use; please see the license file for terms.
-
-If you find our work useful in your research please consider citing our paper:
+This code is for non-commercial use. If you find our work useful in your research, please consider citing our paper:
 
 ```
 @inproceedings{icra_2023_d2nt,
