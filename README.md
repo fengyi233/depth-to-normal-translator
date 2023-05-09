@@ -6,7 +6,9 @@ This repo is the official implementation of the paper:
 [//]: # (> by [Yi Feng]&#40;https://github.com/fengyi233&#41;, [Bohuan Xue]&#40;https://github.com/byronsit&#41;,)
 [//]: # (> and [Rui Fan]&#40;https://ruirangerfan.com/&#41;.)
 
-> [[arXiv]](https://arxiv.org/abs/2304.12031) [[youtube]](https://youtu.be/) [[bilibili]](https://)
+> [[arXiv]](https://arxiv.org/abs/2304.12031)
+> [[homepage]](https://mias.group/D2NT)
+> [[video]](https://www.bilibili.com/video/BV1GX4y1m7jF/)
 
 
 <p align="center">
