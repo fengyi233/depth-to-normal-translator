@@ -67,12 +67,6 @@ You can change the parameter 'VERSION' to select the D2NT version.\
 '**d2nt_v2**' represents for the D2NT with Discontinuity-Aware Gradient (DAG) filter.\
 '**d2nt_v3**' represents for the D2NT with DAG filter and MRF-based Normal Refinement (MNR) module.
 
-### 5.2  Matlab code
-Navigate to [matlab]() directory and run `demo.m`, a result and the corresponding error map (degrees) will be displayed.
-
-### 5.3  C++ code
-Navigate to [cpp]() directory and run `demo.cpp`, a result and the corresponding error map (degrees) will be displayed.
-
 
 # Cite
 This code is for non-commercial use. If you find our work useful in your research, please consider citing our paper:
