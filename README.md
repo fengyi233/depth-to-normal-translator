@@ -54,9 +54,8 @@ The dataset is organized as follows:
  |  |-- ...
 ```
 
-# Demo
+# Python Demo
 
-### 5.1  Python code
 Navigate to [python]() directory and run `demo.py`, a result and the corresponding error map (degrees) will be displayed.
 We also implement [3F2N SNE](https://ieeexplore.ieee.org/document/9381580) in python. The matlab and c++ implementation
 can be found in this [repository](https://github.com/ruirangerfan/Three-Filters-to-Normal). 
