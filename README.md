@@ -60,7 +60,7 @@ Navigate to [python]() directory and run `demo.py`, a result and the correspondi
 We also implement [3F2N SNE](https://ieeexplore.ieee.org/document/9381580) in python. The matlab and c++ implementation
 can be found in this [repository](https://github.com/ruirangerfan/Three-Filters-to-Normal). 
 
-It is recommended to run '**demo.py**' in your Python IDE instead of the Terminal for the sake of visualization.
+It is recommended to run '**demo.py**' in your Python Console instead of the Terminal for the sake of visualization.
 You can change the parameter 'VERSION' to select the D2NT version.\
 '**d2nt_basic**' represents for the depth-to-normal translator without any optimization method.\
 '**d2nt_v2**' represents for the D2NT with Discontinuity-Aware Gradient (DAG) filter.\
@@ -76,6 +76,5 @@ This code is for non-commercial use. If you find our work useful in your researc
 	title       = {{D2NT: A High-Performing Depth-to-Normal Translator}},
 	booktitle   = {{IEEE International Conference on Robotics and Automation (ICRA)}},
 	year        = {{2023}}
-}
 }
 ```
