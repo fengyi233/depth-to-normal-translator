@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "d2nt"
+version = "0.1.1"
+description = "D2NT: A High-Performing Depth-to-Normal Translator"
+readme = "README.md"
+requires-python = ">=3.7"
+license = {text = "MIT"}
+authors = [
+    {name = "Yi Feng, Bohuan Xue, Ming Liu, Qijun Chen, and Rui Fan"}
+]
+keywords = ["depth", "normal", "computer-vision", "robotics", "3d-reconstruction"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Developers",
+    "Topic :: Scientific/Engineering :: Image Processing",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+dependencies = [
+    "numpy>=1.20.0",
+    "opencv-python>=4.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "matplotlib>=3.5.0",
+    "pytest>=7.0.0",
+]
+
+[project.urls]
+Homepage = "https://mias.group/D2NT"
+Documentation = "https://github.com/fengyi233/depth-to-normal-translator"
+Repository = "https://github.com/fengyi233/depth-to-normal-translator"
+"Bug Tracker" = "https://github.com/fengyi233/depth-to-normal-translator/issues"
+
+[tool.setuptools]
+packages = ["d2nt"]
+
+[tool.setuptools.package-data]
+d2nt = []
+
