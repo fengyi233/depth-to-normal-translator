@@ -75,7 +75,7 @@ def get_filter(Z):
     Z = np.asarray(Z, dtype=np.float32)
     Gu = cv2.filter2D(Z, -1, kernel_Gx) / 2
     Gv = cv2.filter2D(Z, -1, kernel_Gy) / 2
-    return Gu.astype(np.float32), Gv.astype(np.float32)
+    return Gu, Gv
 
 
 def get_DAG_filter(Z, base=np.e, lap_conf="1D-DLF"):

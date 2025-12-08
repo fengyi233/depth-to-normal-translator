@@ -17,6 +17,11 @@ This repo is the official implementation of the paper:
 </p>
 
 
+# Introduction
+D2NT is a high-performance Python library for converting depth maps directly to surface normal maps. Unlike prevalent methods or computational libraries (e.g., [Open3D](https://github.com/isl-org/Open3D), [Kornia](https://github.com/kornia/kornia)) that typically require projecting depth images to 3D point clouds and then estimating normals through local plane fitting, D2NT explicitly constructs the mathematical relationship between depth maps and normal maps, enabling end-to-end normal estimation. On 640×480 images, D2NT achieves a computational speed **28× faster than Open3D** and **1.8× faster than Kornia** (even though it's implemented with cuda), significantly outperforming traditional point-cloud-based approaches in both speed and accuracy.
+
+D2NT provides three algorithm versions with increasing accuracy: a fast basic version, an optimized version with Discontinuity-Aware Gradient (DAG) filter, and a refined version with DAG filter and MRF-based Normal Refinement. The library is designed for efficiency, accuracy, and ease of use in computer vision and robotics applications.
+
 # Installation
 
 ## Install from PyPI (Recommended)
@@ -103,6 +108,18 @@ print(f"Normal map shape: {normal.shape}")  # (480, 640, 3)
 - **`d2nt_basic`**: Basic version without any optimization method
 - **`d2nt_v2`**: With Discontinuity-Aware Gradient (DAG) filter
 - **`d2nt_v3`**: With DAG filter and MRF-based Normal Refinement (MNR) module (recommended)
+
+## Performance
+
+We benchmarked D2NT against popular depth-to-normal conversion libraries on 640×480 images:
+
+| Method | FPS | Speedup vs d2nt_basic |
+|--------|-----|----------------------|
+| **d2nt_basic** | **65.5** | 1.0× (baseline) |
+| Kornia | 36.9 | 0.56× (1.8× slower) |
+| Open3D | 2.3 | 0.04× (28× slower) |
+
+**Note**: Performance was measured on a standard CPU. Results may vary depending on hardware configuration. Run `python test_speed.py` to benchmark on your system.
 
 ## Python Demo
 

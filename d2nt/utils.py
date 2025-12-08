@@ -93,8 +93,8 @@ def vector_normalization(normal, eps=1e-8):
     numpy.ndarray
         Normalized normal map.
     """
-    mag = np.linalg.norm(normal, axis=2)
-    normal /= np.expand_dims(mag, axis=2) + eps
+    mag = np.linalg.norm(normal, axis=2, keepdims=True) + eps
+    normal /= mag
     return normal
 
 

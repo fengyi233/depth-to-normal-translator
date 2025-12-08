@@ -78,9 +78,9 @@ def depth2normal(
         Gu, Gv = get_DAG_filter(depth)
 
     # Depth to Normal Translation
-    est_nx = (Gu * cam_fx).astype(np.float32)
-    est_ny = (Gv * cam_fy).astype(np.float32)
-    est_nz = (-(depth + v_map * Gv + u_map * Gu)).astype(np.float32)
+    est_nx = (Gu * cam_fx)
+    est_ny = (Gv * cam_fy)
+    est_nz = (-(depth + v_map * Gv + u_map * Gu))
     
     # Stack arrays along the last axis to create (H, W, 3) array
     est_normal = np.stack((est_nx, est_ny, est_nz), axis=-1).astype(np.float32)
